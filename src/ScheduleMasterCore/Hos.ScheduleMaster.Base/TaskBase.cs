@@ -27,15 +27,20 @@ namespace Hos.ScheduleMaster.Base
         /// </summary>
         public IConfigurationRoot Configuration { get; private set; }
 
+
+        /// <summary>
+        /// 追踪取消任务的Token
+        /// </summary>
         public CancellationToken CancellationToken { get; set; }
 
         /// <summary>
-        /// 这里可以执行一些初始化操作，比如加载自己的配置文件
+        /// 这里可以执行一些初始化操作,IOC容器的依赖注入
         /// </summary>
         /// <param name="context"></param>
         public virtual void Initialize()
         {
             ///TODO:
+            ///IOC容器的依赖注入
         }
 
         /// <summary>
