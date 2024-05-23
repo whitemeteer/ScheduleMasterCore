@@ -12,5 +12,6 @@ namespace Hos.ScheduleMaster.Passion
         {
             context.WriteLog($"当前时间是：{DateTime.Now}");
         }
+
     }
 }
